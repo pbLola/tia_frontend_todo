@@ -1,0 +1,69 @@
+:root {
+  --color-kelp: #3d402f;
+  --color-willow: #6b7f64;
+  --color-whiskey: #d59a7a;
+  --color-tamarillo: #9c0d0f;
+  --color-platinum: #e3e6e6;
+  --color-dark-vanilla: #cec581;
+
+  --card-opacity: 0.75;
+
+  --font-display: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#app {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: linear-gradient(
+    180deg,
+    var(--color-dark-vanilla),
+    rgba(206, 197, 129, 0.95)
+  );
+  color: var(--color-kelp);
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background: linear-gradient(90deg, var(--color-kelp), var(--color-willow));
+  color: var(--color-platinum);
+}
+.input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  width: 100%;
+}
+.card-base {
+  border-radius: var(--radius-md);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
